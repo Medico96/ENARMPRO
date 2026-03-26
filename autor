@@ -1,0 +1,23 @@
+
+---
+
+## 26. 🎯 Comandos Finales
+
+```bash
+# 1. Estructura final del proyecto
+npm init -y
+npm install next@14 react react-dom
+npm install -D typescript @types/react @types/node tailwindcss postcss autoprefixer
+npm install framer-motion lucide-react date-fns clsx tailwind-merge
+
+# 2. Inicializar Tailwind
+npx tailwindcss init -p
+
+# 3. Ejecutar en desarrollo
+npm run dev
+
+# 4. Build
+npm run build
+
+# 5. Deploy a Vercel
+vercel --prod
