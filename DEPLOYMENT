@@ -1,4 +1,33 @@
 # 🚀 ENARM Pro - Deployment Checklist
+# 1. Clonar y configurar
+git clone https://github.com/tu-usuario/enarm-pro.git
+cd enarm-pro
+npm install
+
+# 2. Configurar environment
+cp .env.example .env.local
+# Editar .env.local con tus credenciales
+
+# 3. Setup base de datos
+npm run setup-db
+npm run seed
+
+# 4. Desarrollo local
+npm run dev
+
+# 5. Build y test
+npm run build
+npm run type-check
+npm run lint
+
+# 6. Deploy a Vercel
+npm run deploy
+# O simplemente:
+vercel --prod
+
+# 7. Configurar webhooks de Stripe
+# URL: https://tu-dominio.vercel.app/api/stripe/webhook
+
 
 ## Pre-deployment
 - [ ] Todas las variables de entorno configuradas en Vercel
@@ -41,31 +70,3 @@
 - [ ] Analytics funnel configurado
 - [ ] Pixel de Facebook (opcional)
 
-## 1. Clonar y configurar
-git clone https://github.com/tu-usuario/enarm-pro.git
-cd enarm-pro
-npm install
-
-## 2. Configurar environment
-cp .env.example .env.local
-## Editar .env.local con tus credenciales
-
-## 3. Setup base de datos
-npm run setup-db
-npm run seed
-
-## 4. Desarrollo local
-npm run dev
-
-## 5. Build y test
-npm run build
-npm run type-check
-npm run lint
-
-## 6. Deploy a Vercel
-npm run deploy
-## O simplemente:
-vercel --prod
-
-## 7. Configurar webhooks de Stripe
-## URL: https://tu-dominio.vercel.app/api/stripe/webhook
