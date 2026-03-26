@@ -30,3 +30,20 @@
     "eslint-config-next": "14.2.0"
   }
 }
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "deploy": "bash scripts/deploy.sh",
+    "setup-db": "bash scripts/setup-db.sh",
+    "seed": "tsx scripts/seed-data.ts",
+    "db:push": "supabase db push",
+    "db:reset": "supabase db reset",
+    "generate-icons": "bash scripts/generate-icons.sh",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  }
+}
