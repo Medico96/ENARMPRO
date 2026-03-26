@@ -1,0 +1,42 @@
+# 🚀 ENARM Pro - Deployment Checklist
+
+## Pre-deployment
+- [ ] Todas las variables de entorno configuradas en Vercel
+- [ ] Base de datos Supabase configurada y migrada
+- [ ] RLS policies activadas y probadas
+- [ ] Stripe webhooks configurados
+- [ ] Dominio personalizado configurado (opcional)
+- [ ] SSL/HTTPS habilitado
+- [ ] Analytics configurado (Vercel/GA4)
+- [ ] Error tracking configurado (Sentry)
+- [ ] PWA manifest configurado
+- [ ] Iconos generados
+
+## Testing
+- [ ] Tests unitarios pasando
+- [ ] Type checking sin errores
+- [ ] Linter sin warnings críticos
+- [ ] Build de producción exitoso
+- [ ] PWA funcional en Chrome/Safari
+- [ ] Modo offline funcional
+- [ ] Notificaciones push funcionando
+- [ ] Pagos Stripe en modo test
+
+## Post-deployment
+- [ ] Stripe webhook en modo producción
+- [ ] Email transaccional configurado (Resend)
+- [ ] Backup de base de datos configurado
+- [ ] Monitoring activo
+- [ ] CDN configurado (automático en Vercel)
+- [ ] SEO metadata completo
+- [ ] Sitemap generado
+- [ ] robots.txt configurado
+- [ ] Documentación de API actualizada
+
+## Marketing
+- [ ] Landing page optimizada
+- [ ] Meta tags Open Graph
+- [ ] Twitter cards
+- [ ] Google Search Console
+- [ ] Analytics funnel configurado
+- [ ] Pixel de Facebook (opcional)
